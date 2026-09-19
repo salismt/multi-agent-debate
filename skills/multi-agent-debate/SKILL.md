@@ -41,6 +41,13 @@ Debate compresses diversity, so converge only as much as the objective demands.
 6. **Decide.** Output a ranked recommendation scored on an explicit framework (value × effort × risk, or RICE/ICE), with the winning argument and the strongest surviving objection. Decision-useful: owned, measurable, sequenced.
 7. **Persist for resumption.** Write a durable record — decisions + rationale, open questions + what evidence closes each, assumptions ledger, changelog — so the next session resumes the analysis instead of restarting it.
 
+## Model Assignment
+Debate tolerates heterogeneous models; judging does not.
+
+- **Personas** — vary the model where you can. Cross-model debate beat both participants debating alone (Du et al.), and weaker models gain proportionally more from the protocol than frontier ones.
+- **Judge + verification** — use the strongest model available and keep it fixed. Judges favor their own model family, so drawing the judge from one debater's family biases the verdict (Liang et al.).
+- On a weak base model, cut the round count and tighten the rubric. Debate amplifies the reasoning a model already has; it does not substitute for it.
+
 ## Judge Rubric (evidence-based LLM-as-judge)
 Score every contested claim and the final recommendation 1–5 on each criterion. A score is **valid only if the judge cites the specific evidence** — an evidence-ledger row, a source, or a numeric check — that justifies it; bare numbers and vague justifications are themselves a fail. Anything scoring **<4** goes back for another refine round (step 4) or is marked `OPEN`.
 
